@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecipeCell" id="rYg-w4-UTm" customClass="RecipeCell" customModule="Food2ForkApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rYg-w4-UTm" id="YJb-z3-XOl">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zXh-oc-NmU">
+                        <rect key="frame" x="5" y="5" width="180" height="33.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="9qN-1H-W9l"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9y-Mz-JZa">
+                        <rect key="frame" x="190" y="14.5" width="164" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="F9y-Mz-JZa" firstAttribute="centerY" secondItem="zXh-oc-NmU" secondAttribute="centerY" id="476-8b-eI1"/>
+                    <constraint firstItem="zXh-oc-NmU" firstAttribute="leading" secondItem="YJb-z3-XOl" secondAttribute="leading" constant="5" id="PjF-va-wNE"/>
+                    <constraint firstItem="zXh-oc-NmU" firstAttribute="top" secondItem="YJb-z3-XOl" secondAttribute="top" constant="5" id="RVb-lq-6M8"/>
+                    <constraint firstItem="F9y-Mz-JZa" firstAttribute="leading" secondItem="zXh-oc-NmU" secondAttribute="trailing" constant="5" id="oP5-41-gvb"/>
+                    <constraint firstAttribute="bottom" secondItem="zXh-oc-NmU" secondAttribute="bottom" constant="5" id="sXv-v9-2BF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="F9y-Mz-JZa" secondAttribute="trailing" constant="5" id="vOD-vz-ZGa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="recipeImage" destination="zXh-oc-NmU" id="7lQ-Nv-HJa"/>
+                <outlet property="recipeName" destination="F9y-Mz-JZa" id="0ZM-nk-M1A"/>
+            </connections>
+            <point key="canvasLocation" x="128.80000000000001" y="106.14692653673164"/>
+        </tableViewCell>
+    </objects>
+</document>
